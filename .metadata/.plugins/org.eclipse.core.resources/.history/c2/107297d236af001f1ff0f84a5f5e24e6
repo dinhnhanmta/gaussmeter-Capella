@@ -214,6 +214,10 @@
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="36a6fe38-852b-4c1c-978e-c342aefe0c40" name="inМагнитное поле"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="1b43a996-24cc-4179-b079-19fc3dc857cd" name="outНапряжение"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="77dd01fe-c42c-4ce8-a869-b13b22eceb69" name="outНапряжение от дачика"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="15100a6b-0432-45bd-af0e-55816a6c1f52" name="outНапряжение от дачика"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="ef1ed2a0-bf3b-4a09-a010-2c01615e144c" targetElement="#550d2a81-06a1-4d86-a548-d80834625325"
@@ -502,104 +506,15 @@
       </ownedDataPkg>
       <ownedSystemComponentPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg"
           id="ea113ff5-c9ac-42f8-a802-d83ba2cc1b5f" name="Structure">
-        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-            id="f90c98a3-e7f0-4c8f-a41a-31ee956e1a3f" targetElement="#c53272db-b629-4cc7-8f10-d9ba94fcd649"
-            sourceElement="#cc1aa2f7-7f07-4036-989e-07dc6fd32aa5"/>
-        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-            id="3c61e214-86c1-4661-b61b-878daf3aa040" targetElement="#02e6a7b4-bcc7-456b-9ab5-bda89efe0188"
-            sourceElement="#f482c82a-36c6-4c54-ada8-75e2a427e445"/>
-        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-            id="fd12bf78-f076-410b-b4c8-4c7bc7500f72" targetElement="#aa5daaea-f466-4ba2-bbf4-bcf535d0f2d4"
-            sourceElement="#a72b4fd7-cea4-45b5-81d4-a69df79edb6f"/>
-        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-            id="ba14270d-2e6d-47bc-a5d3-05f6af1d5b2d" targetElement="#d6531eed-36b8-4c8d-86ff-2248a47c8ac8"
-            sourceElement="#8ade86c9-8138-4c78-8f8d-71571d4b6a80"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="52ad5a58-d2ff-41a7-aacc-edfd2d62ab4f"
             name="Гауссметр" abstractType="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
-        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="cc1aa2f7-7f07-4036-989e-07dc6fd32aa5"
-            name="Пользователи" abstractType="#de7ede6f-926a-4913-a197-8bd1b28312b6"/>
-        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="f482c82a-36c6-4c54-ada8-75e2a427e445"
-            name="Гауссметр" abstractType="#5ed1fd3c-451a-4548-9400-838d21c77580"/>
-        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="a72b4fd7-cea4-45b5-81d4-a69df79edb6f"
-            name="Магнитное поле" abstractType="#e22a133f-71c9-42d7-ab66-3622127c60ea"/>
-        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="8ade86c9-8138-4c78-8f8d-71571d4b6a80"
-            name="Компьютер" abstractType="#219c24ee-4e26-4c2e-aa26-4996528eb85e"/>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
             id="dff8d33f-540d-4da7-a409-9a9c1da8b706" name="Гауссметр">
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="8dfdbaa1-996d-4945-b9e8-c9815be2dfae" targetElement="#b599f76b-0842-4f5e-848c-76d14d77bb7a"
-              sourceElement="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="159ca011-b71c-434b-ad1c-fe771270efd1" targetElement="#033a9da2-e867-4ac4-8c5a-80d6454a8a67"
-              sourceElement="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="8cc563cf-c193-4072-ba91-c68bd15de1c0" targetElement="#f8f47e93-0c73-4d7a-ad6a-464059e7d564"
-              sourceElement="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="41ea970b-16c8-484b-8080-84f41a7fde9e" targetElement="#accacedf-ddbe-468f-8f6d-fb3f458718d5"
-              sourceElement="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="42fb96f8-1379-431e-ab3d-736d2be326db" targetElement="#e3a849bf-6ef1-4e82-906c-4283fde4ad75"
-              sourceElement="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
           <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
               id="0fbb463c-76fb-434c-b6e8-3c4ec38fb8ea" name="System State Machine">
             <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                 id="3147f9f6-667f-48e0-a97a-534cff6d03c7" name="Default Region"/>
           </ownedStateMachines>
-        </ownedSystemComponents>
-        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="de7ede6f-926a-4913-a197-8bd1b28312b6" name="Пользователи" actor="true">
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="0ed7abf5-2c2a-45ed-adf0-8d62e4a1efa7" targetElement="#e8e235b1-6f7e-4914-aa4f-4707c80fcc30"
-              sourceElement="#adbeb61a-719f-479f-9d62-2d0c3ac097a3"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="adbeb61a-719f-479f-9d62-2d0c3ac097a3" targetElement="#affa5528-a740-483a-9ed6-1dc89ca054cf"
-              sourceElement="#de7ede6f-926a-4913-a197-8bd1b28312b6"/>
-          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
-              id="c4c48a7a-c6b6-4b53-9f26-4bafa6e90e69" targetElement="#8120ed6e-450b-495e-b8d1-f3cb5e215529"
-              sourceElement="#de7ede6f-926a-4913-a197-8bd1b28312b6"/>
-        </ownedSystemComponents>
-        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="5ed1fd3c-451a-4548-9400-838d21c77580" name="Гауссметр" actor="true">
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="d852148f-b68e-4d4e-bc8f-10deb30cf362" targetElement="#320d9e39-c4f8-4409-94a2-20b138d3bf5a"
-              sourceElement="#41ea970b-16c8-484b-8080-84f41a7fde9e"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="a9238ee9-d35a-4b39-8b6a-65e1af490f8f" targetElement="#fbdb6424-934c-4816-9400-bac15e6b5fee"
-              sourceElement="#42fb96f8-1379-431e-ab3d-736d2be326db"/>
-          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
-              id="4b38f46e-0cd0-4743-abdc-d41858c2def7" targetElement="#7ef1ff4f-3874-4da7-8d36-35db8e40dca9"
-              sourceElement="#5ed1fd3c-451a-4548-9400-838d21c77580"/>
-        </ownedSystemComponents>
-        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="e22a133f-71c9-42d7-ab66-3622127c60ea" name="Магнитное поле" actor="true">
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="cfb0357b-df01-430f-9cd8-b48891cf98a7" targetElement="#d5a5e2eb-49fe-4d61-bb6d-56f95963a2e3"
-              sourceElement="#1eb7dcc2-9ce7-46df-829b-f71243693c7d"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="1eb7dcc2-9ce7-46df-829b-f71243693c7d" targetElement="#20166ca5-6e89-42f0-b819-a8d55415d307"
-              sourceElement="#e22a133f-71c9-42d7-ab66-3622127c60ea"/>
-          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
-              id="9a8d0d8f-3671-4fa9-98bb-75cae7eacb6c" targetElement="#8b11b5ef-29f8-453b-8b3e-9464fb7e12fa"
-              sourceElement="#e22a133f-71c9-42d7-ab66-3622127c60ea"/>
-        </ownedSystemComponents>
-        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="219c24ee-4e26-4c2e-aa26-4996528eb85e" name="Компьютер" actor="true">
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="768bce92-0157-4bb9-b858-7bb4d91cdf5f" targetElement="#2ca2ebc0-7a9f-4910-9623-9c96139cc42f"
-              sourceElement="#558a4a13-0e17-4f99-b7aa-42284808d230"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="558a4a13-0e17-4f99-b7aa-42284808d230" targetElement="#f778e3dc-f15b-4877-bc6e-c03e97addb75"
-              sourceElement="#219c24ee-4e26-4c2e-aa26-4996528eb85e"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="c96ccc64-695d-4f26-a3c1-cea435a87b63" targetElement="#6e63821e-c933-45b7-8ef9-389dd030e755"
-              sourceElement="#219c24ee-4e26-4c2e-aa26-4996528eb85e"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="53144232-7139-475e-81cb-bbc238370657" targetElement="#fbb259d0-f18d-4ada-ad0b-dd56a60a0bec"
-              sourceElement="#219c24ee-4e26-4c2e-aa26-4996528eb85e"/>
-          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
-              id="8f75c2cd-ca9f-46e8-99d7-bfc05919cbde" targetElement="#2d557f17-f308-449e-80d8-cd93f23a5afc"
-              sourceElement="#219c24ee-4e26-4c2e-aa26-4996528eb85e"/>
         </ownedSystemComponents>
       </ownedSystemComponentPkg>
       <ownedMissionPkg xsi:type="org.polarsys.capella.core.data.ctx:MissionPkg" id="d0e6e628-f687-4d7a-b872-2d6b14a967d3"

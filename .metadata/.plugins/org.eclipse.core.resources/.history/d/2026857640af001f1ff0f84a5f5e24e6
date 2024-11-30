@@ -214,6 +214,10 @@
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="36a6fe38-852b-4c1c-978e-c342aefe0c40" name="inМагнитное поле"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="1b43a996-24cc-4179-b079-19fc3dc857cd" name="outНапряжение"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="77dd01fe-c42c-4ce8-a869-b13b22eceb69" name="outНапряжение от дачика"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="15100a6b-0432-45bd-af0e-55816a6c1f52" name="outНапряжение от дачика"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="ef1ed2a0-bf3b-4a09-a010-2c01615e144c" targetElement="#550d2a81-06a1-4d86-a548-d80834625325"
@@ -536,10 +540,10 @@
               id="8cc563cf-c193-4072-ba91-c68bd15de1c0" targetElement="#f8f47e93-0c73-4d7a-ad6a-464059e7d564"
               sourceElement="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="41ea970b-16c8-484b-8080-84f41a7fde9e" targetElement="#accacedf-ddbe-468f-8f6d-fb3f458718d5"
+              id="c96ccc64-695d-4f26-a3c1-cea435a87b63" targetElement="#6e63821e-c933-45b7-8ef9-389dd030e755"
               sourceElement="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="42fb96f8-1379-431e-ab3d-736d2be326db" targetElement="#e3a849bf-6ef1-4e82-906c-4283fde4ad75"
+              id="53144232-7139-475e-81cb-bbc238370657" targetElement="#fbb259d0-f18d-4ada-ad0b-dd56a60a0bec"
               sourceElement="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
           <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
               id="0fbb463c-76fb-434c-b6e8-3c4ec38fb8ea" name="System State Machine">
@@ -567,6 +571,12 @@
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="a9238ee9-d35a-4b39-8b6a-65e1af490f8f" targetElement="#fbdb6424-934c-4816-9400-bac15e6b5fee"
               sourceElement="#42fb96f8-1379-431e-ab3d-736d2be326db"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="41ea970b-16c8-484b-8080-84f41a7fde9e" targetElement="#accacedf-ddbe-468f-8f6d-fb3f458718d5"
+              sourceElement="#5ed1fd3c-451a-4548-9400-838d21c77580"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="42fb96f8-1379-431e-ab3d-736d2be326db" targetElement="#e3a849bf-6ef1-4e82-906c-4283fde4ad75"
+              sourceElement="#5ed1fd3c-451a-4548-9400-838d21c77580"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="4b38f46e-0cd0-4743-abdc-d41858c2def7" targetElement="#7ef1ff4f-3874-4da7-8d36-35db8e40dca9"
               sourceElement="#5ed1fd3c-451a-4548-9400-838d21c77580"/>
@@ -590,12 +600,6 @@
               sourceElement="#558a4a13-0e17-4f99-b7aa-42284808d230"/>
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="558a4a13-0e17-4f99-b7aa-42284808d230" targetElement="#f778e3dc-f15b-4877-bc6e-c03e97addb75"
-              sourceElement="#219c24ee-4e26-4c2e-aa26-4996528eb85e"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="c96ccc64-695d-4f26-a3c1-cea435a87b63" targetElement="#6e63821e-c933-45b7-8ef9-389dd030e755"
-              sourceElement="#219c24ee-4e26-4c2e-aa26-4996528eb85e"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="53144232-7139-475e-81cb-bbc238370657" targetElement="#fbb259d0-f18d-4ada-ad0b-dd56a60a0bec"
               sourceElement="#219c24ee-4e26-4c2e-aa26-4996528eb85e"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="8f75c2cd-ca9f-46e8-99d7-bfc05919cbde" targetElement="#2d557f17-f308-449e-80d8-cd93f23a5afc"
