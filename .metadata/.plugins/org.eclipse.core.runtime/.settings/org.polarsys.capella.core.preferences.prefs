@@ -16,6 +16,7 @@ expand.left.viewer.content=true
 expand.right.viewer.content=true
 expand.single.viewer.content=true
 inheritance.allowed=false
+org.polarsys.capella.core.transition_textualFilter_isActive=true
 reuse.components.allowed=false
 sync.componentport2functionport.allowed=true
 sync.physicalport2componentport.physicallink.allowed=true

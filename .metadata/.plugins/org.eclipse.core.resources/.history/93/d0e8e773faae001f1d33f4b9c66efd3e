@@ -74,9 +74,6 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="d1e4dbdb-222b-4d6d-a41d-6fe3c6c30b26" name="Результат измерений"
               target="#b77e436a-b6b0-4bac-aafc-0c9ef505297e" source="#491eb939-4896-4ca9-9daa-b061147fa5e8"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="2dc96741-e81a-4ea5-8248-516bbec76b06" name="Результаты и история измерений"
-              target="#ebfe38ee-c5c8-487c-9f4c-06dee2fa4ae9" source="#3a02bcfb-c2b5-429e-9d30-a90ba62400de"/>
         </ownedOperationalActivities>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
@@ -159,107 +156,44 @@
           id="aef61586-55a5-401b-ba52-eaee9b2a6941" name="System Functions">
         <ownedSystemFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
             id="330c3dd4-bf3a-4cac-8e26-9519d4abfa96" name="Root System Function">
-          <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.fa:FunctionalChain"
-              id="947c0db3-ecf1-4190-a959-5b3cd659f9db" name="FunctionalChain прием и преобразование сигнал">
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="db631bd9-5291-4c65-a0fe-ac41ee77b78f" involved="#82505de2-35f5-491d-b93b-5043c27bdd4d"
-                source="#4d02609e-3727-43ab-876f-4955bf97e40e" target="#8d6bdd94-4d89-493a-ab9c-29eea4dbb1c0"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="8d6bdd94-4d89-493a-ab9c-29eea4dbb1c0" involved="#accacedf-ddbe-468f-8f6d-fb3f458718d5"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="4d02609e-3727-43ab-876f-4955bf97e40e" involved="#20166ca5-6e89-42f0-b819-a8d55415d307"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="facd5da2-d450-4b0e-9383-15194660801e" involved="#92913328-8f2b-4ea3-87d0-b0f2e96b112f"
-                source="#8d6bdd94-4d89-493a-ab9c-29eea4dbb1c0" target="#d5845796-7524-4609-879b-6eefb62da881"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="d5845796-7524-4609-879b-6eefb62da881" involved="#b599f76b-0842-4f5e-848c-76d14d77bb7a"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="cc5df334-71ba-42fc-95e2-fd7ce47250d1" involved="#c27fe9ea-7c80-415c-83c0-8a9db11fdb83"
-                source="#d5845796-7524-4609-879b-6eefb62da881" target="#d920174e-d0d5-4fa6-b757-0afbda2378dd"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="d920174e-d0d5-4fa6-b757-0afbda2378dd" involved="#033a9da2-e867-4ac4-8c5a-80d6454a8a67"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="9756cc0c-ac6a-4f65-b713-048e9ad26898" involved="#5d2b8180-2594-4391-b853-f859c0cd7a0f"
-                source="#d920174e-d0d5-4fa6-b757-0afbda2378dd" target="#e914a862-28aa-4d55-8b39-049f0bd3831f"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="e914a862-28aa-4d55-8b39-049f0bd3831f" involved="#f8f47e93-0c73-4d7a-ad6a-464059e7d564"/>
-          </ownedFunctionalChains>
-          <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.fa:FunctionalChain"
-              id="7d218c8a-9cfd-46e9-a89b-69fe699013a2" name="FunctionalChain Передача и сохранение результат измерения">
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="706cde82-ca78-4aaa-a4f3-7548bb670d72" involved="#8251679a-7423-4456-bf71-17f8a1743a46"
-                source="#c152b763-42e4-4af8-8be4-4379dafba977" target="#ff9f4101-f5db-4a6a-b5f6-63e6c1d36c2c"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="ff9f4101-f5db-4a6a-b5f6-63e6c1d36c2c" involved="#6e63821e-c933-45b7-8ef9-389dd030e755"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="c152b763-42e4-4af8-8be4-4379dafba977" involved="#e3a849bf-6ef1-4e82-906c-4283fde4ad75"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="8623edcd-48d4-4db5-8f6f-f8c4a9a28234" involved="#df8f55c1-d3df-46d5-bdec-d53c8388b683"
-                source="#ff9f4101-f5db-4a6a-b5f6-63e6c1d36c2c" target="#be13337c-ffa8-41ee-bd27-706e155a01d6"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="be13337c-ffa8-41ee-bd27-706e155a01d6" involved="#fbb259d0-f18d-4ada-ad0b-dd56a60a0bec"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="cb676d64-1c76-4b39-a558-e5aea9e0afcc" involved="#50ec9b10-5e06-42a6-9344-49ae748461fc"
-                source="#be13337c-ffa8-41ee-bd27-706e155a01d6" target="#5252e9ab-70fe-46f9-be59-26877b427dc8"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="5252e9ab-70fe-46f9-be59-26877b427dc8" involved="#f778e3dc-f15b-4877-bc6e-c03e97addb75"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="6b56938b-60bc-4ad5-abe5-3cf1430453b9" involved="#291ce954-156b-48ad-9e98-a1a180f2611a"
-                source="#5252e9ab-70fe-46f9-be59-26877b427dc8" target="#f448d067-0b7a-4d94-bb3a-b41993ebe4e3"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="f448d067-0b7a-4d94-bb3a-b41993ebe4e3" involved="#affa5528-a740-483a-9ed6-1dc89ca054cf"/>
-          </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="accacedf-ddbe-468f-8f6d-fb3f458718d5" name="принимать сигнал магнитного поля">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="36a6fe38-852b-4c1c-978e-c342aefe0c40" name="inМагнитное поле"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="1b43a996-24cc-4179-b079-19fc3dc857cd" name="outНапряжение"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="77dd01fe-c42c-4ce8-a869-b13b22eceb69" name="outНапряжение от дачика"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="15100a6b-0432-45bd-af0e-55816a6c1f52" name="outНапряжение от дачика"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="ef1ed2a0-bf3b-4a09-a010-2c01615e144c" targetElement="#550d2a81-06a1-4d86-a548-d80834625325"
                 sourceElement="#accacedf-ddbe-468f-8f6d-fb3f458718d5"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="dbb0f9e4-c84e-4a54-8aed-9b5d54efded9" name="преобразовывать сигнал в результат измерения">
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="b599f76b-0842-4f5e-848c-76d14d77bb7a" name="Усилить сигнал магнитного поля">
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="cc27ec4d-ba86-4965-b89a-852514389565" name="inНапряжение от дачика"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="6a210ada-9ca3-4233-bc1e-90874d2870ac" name="FOP 1"/>
-            </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="033a9da2-e867-4ac4-8c5a-80d6454a8a67" name="Преобразывать усиленный сигнал в цифровой сигнал">
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="260c1108-7ab9-46f1-83b5-05d66d56352a" name="FIP 1"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="2a4c7835-4f31-4fdf-8dd0-9c9d16b71411" name="FOP 1"/>
-            </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="f8f47e93-0c73-4d7a-ad6a-464059e7d564" name="Преобазывать цифровой сигнал в результат измерения">
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="ba688584-4c7a-40c7-a859-deec77d075b2" name="FIP 1"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="2d24c534-b6f1-4279-b580-af30be1663f8" name="outРезультат измерений"/>
-            </ownedFunctions>
+              id="3c2a6a97-a0ae-49f6-907e-6f729a1fee9d" name="Усилить сигнал магнитного поля">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="71a489fe-86c2-46da-bc00-9f7390e77893" name="inНапряжение"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="3cc44b14-ba26-459b-b0ed-0b1cdb6569bd" name="outусиленное напряжение"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="278ad574-228b-4723-a73b-7dccd93995ae" name="преобразовывать сигнал в цифровую форму">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="12a55b74-e78c-43b8-a814-6aa9f10b6762" name="inусиленное напряжение"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="376703a5-98ab-462c-a6d7-b1a18d451f64" name="outЧисло пропорционально напряжению"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
-                id="2f8eed7c-db01-4d84-aa1e-636d23cae82a" targetElement="#491eb939-4896-4ca9-9daa-b061147fa5e8"
-                sourceElement="#dbb0f9e4-c84e-4a54-8aed-9b5d54efded9"/>
-            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="c27fe9ea-7c80-415c-83c0-8a9db11fdb83" name="Усиленное напряжение"
-                target="#260c1108-7ab9-46f1-83b5-05d66d56352a" source="#6a210ada-9ca3-4233-bc1e-90874d2870ac"/>
-            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="5d2b8180-2594-4391-b853-f859c0cd7a0f" name="Цифровой сигнал" target="#ba688584-4c7a-40c7-a859-deec77d075b2"
-                source="#2a4c7835-4f31-4fdf-8dd0-9c9d16b71411"/>
+                id="6c36705d-97d2-48fb-8a5a-2d15078a4b7d" targetElement="#491eb939-4896-4ca9-9daa-b061147fa5e8"
+                sourceElement="#278ad574-228b-4723-a73b-7dccd93995ae"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="d1087c90-367a-4f3f-8d52-08057a4ef9b4" name="преобразовывать в результат измерения">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="b8ead480-88b0-4366-84de-32cff05da20e" name="inЧисло пропорционально напряжению"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="e6cd391c-d90d-49b2-a18b-1808047cddd6" name="outРезультаты измерений"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="e3a849bf-6ef1-4e82-906c-4283fde4ad75" name="Передать результаты измерений">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="814bfd99-c69f-4922-aa49-1dd8d991c3b4" name="inРезультат измерений"/>
+                id="e278dcf3-3287-432a-9bec-73b7025e3857" name="inРезультаты измерений"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="e364b3e9-65de-4416-9359-bede323752a6" name="outРезультаты измерений"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
@@ -268,41 +202,24 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="828a4ea3-e37c-4291-8cd2-766c4821ee7e" name="Сохранять результаты измерений">
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="6e63821e-c933-45b7-8ef9-389dd030e755" name="Сохраниять результат и время измерения">
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="85d92384-cb64-4cba-ac6b-df5cf3d3b7a3" name="inРезультаты измерений"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="fa184b26-b7ec-4526-b7ee-804b33e4d8a2" name="FOP 1"/>
-            </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="fbb259d0-f18d-4ada-ad0b-dd56a60a0bec" name="Восстанавливать историю измерений">
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="f4c00516-b7a2-4005-8ecb-e9aa28441c05" name="FIP 1"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="12b5c7c1-ea44-4cb9-9bc4-3dee81f09f72" name="outРезультаты и время измерений"/>
-            </ownedFunctions>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="85d92384-cb64-4cba-ac6b-df5cf3d3b7a3" name="inРезультаты измерений"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="12b5c7c1-ea44-4cb9-9bc4-3dee81f09f72" name="outРезультаты и время измерений"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="d2298486-117d-4d17-b4a6-36c492d076bd" targetElement="#85fc3858-6ae2-44d6-9de8-4be2679896fd"
                 sourceElement="#828a4ea3-e37c-4291-8cd2-766c4821ee7e"/>
-            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="df8f55c1-d3df-46d5-bdec-d53c8388b683" name="Результаты и время измерений"
-                target="#f4c00516-b7a2-4005-8ecb-e9aa28441c05" source="#fa184b26-b7ec-4526-b7ee-804b33e4d8a2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="f778e3dc-f15b-4877-bc6e-c03e97addb75" name="Отображать историю измерений">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="4fd2a8e4-a78f-4879-822f-671d4754522e" name="inРезультаты и время измерений"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="36d6864a-b695-493f-a168-435f8e5176d7" name="outРезультаты и история измерений"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="dcfbac5f-c187-441a-9b98-ccf94b43d92e" targetElement="#3a02bcfb-c2b5-429e-9d30-a90ba62400de"
                 sourceElement="#f778e3dc-f15b-4877-bc6e-c03e97addb75"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="affa5528-a740-483a-9ed6-1dc89ca054cf" name="Использовать результатов измерения">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="6a59ff27-cd28-447b-800f-35aea83d01ae" name="inРезультаты и история измерений"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="3763d6db-21df-49a2-9ef7-f5162e4a4da1" targetElement="#ebfe38ee-c5c8-487c-9f4c-06dee2fa4ae9"
                 sourceElement="#affa5528-a740-483a-9ed6-1dc89ca054cf"/>
@@ -319,6 +236,15 @@
               id="5042fe7f-7159-4e82-9bb2-f5acb0ef88e5" targetElement="#41c3ca98-fbd0-443d-b203-80ce0c35105c"
               sourceElement="#330c3dd4-bf3a-4cac-8e26-9519d4abfa96"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="d8600884-4687-490e-add6-ecd11db72a6c" name="Напряжение" target="#71a489fe-86c2-46da-bc00-9f7390e77893"
+              source="#1b43a996-24cc-4179-b079-19fc3dc857cd"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="e89f8f51-7805-45ef-994b-cc7c642a6d81" name="усиленное напряжение"
+              target="#12a55b74-e78c-43b8-a814-6aa9f10b6762" source="#3cc44b14-ba26-459b-b0ed-0b1cdb6569bd"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="e110e7bd-86df-456e-874a-a52a89ce101b" name="Число пропорционально напряжению"
+              target="#b8ead480-88b0-4366-84de-32cff05da20e" source="#376703a5-98ab-462c-a6d7-b1a18d451f64"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="8251679a-7423-4456-bf71-17f8a1743a46" name="Результаты измерений"
               target="#85d92384-cb64-4cba-ac6b-df5cf3d3b7a3" source="#e364b3e9-65de-4416-9359-bede323752a6">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
@@ -333,32 +259,14 @@
                 sourceElement="#50ec9b10-5e06-42a6-9344-49ae748461fc"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="5d54f5be-ea60-4d00-824a-c2126139661c" name="Результаты измерений"
+              target="#e278dcf3-3287-432a-9bec-73b7025e3857" source="#e6cd391c-d90d-49b2-a18b-1808047cddd6"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="82505de2-35f5-491d-b93b-5043c27bdd4d" name="Магнитное поле" target="#36a6fe38-852b-4c1c-978e-c342aefe0c40"
               source="#83de0eb1-775f-40e5-a9a0-bdcf5ffb79d9">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="1baf4042-9787-40aa-970c-b3425ad96c87" targetElement="#d1806572-7e49-499d-bd77-dec4f14d03d1"
                 sourceElement="#82505de2-35f5-491d-b93b-5043c27bdd4d"/>
-          </ownedFunctionalExchanges>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="92913328-8f2b-4ea3-87d0-b0f2e96b112f" name="Напряжение от дачика"
-              target="#cc27ec4d-ba86-4965-b89a-852514389565" source="#15100a6b-0432-45bd-af0e-55816a6c1f52">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="d38f5fe5-1e7d-4594-ac6e-b6a9f81d5eba" targetElement="#99b22298-ca29-4506-9a9a-45d6263fcaf5"
-                sourceElement="#92913328-8f2b-4ea3-87d0-b0f2e96b112f"/>
-          </ownedFunctionalExchanges>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="229dad46-eb9f-4a35-b6e8-6604f9f68416" name="Результат измерений"
-              target="#814bfd99-c69f-4922-aa49-1dd8d991c3b4" source="#2d24c534-b6f1-4279-b580-af30be1663f8">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="6c1ebf80-c153-4379-afb1-9f910ad9dc71" targetElement="#d1e4dbdb-222b-4d6d-a41d-6fe3c6c30b26"
-                sourceElement="#229dad46-eb9f-4a35-b6e8-6604f9f68416"/>
-          </ownedFunctionalExchanges>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="291ce954-156b-48ad-9e98-a1a180f2611a" name="Результаты и история измерений"
-              target="#6a59ff27-cd28-447b-800f-35aea83d01ae" source="#36d6864a-b695-493f-a168-435f8e5176d7">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="b61dea50-f0d3-497a-9ba6-c19aa338c266" targetElement="#2dc96741-e81a-4ea5-8248-516bbec76b06"
-                sourceElement="#291ce954-156b-48ad-9e98-a1a180f2611a"/>
           </ownedFunctionalExchanges>
         </ownedSystemFunctions>
       </ownedFunctionPkg>
@@ -369,14 +277,17 @@
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="6da1f58d-bdaf-420b-af1f-9826e29b259c" targetElement="#c68764f0-146f-4097-b961-073ed6d8d685"
               sourceElement="#fcd1e083-9876-45f7-aa0a-1357e7068ac6"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="6c3355d4-3c04-4fa8-b53b-f5b13e84687e" targetElement="#721bc015-cfc8-4ac6-b430-a277d53cfdc6"
+              sourceElement="#b379957b-fa92-4a9b-8bc1-0a3c993e90c9"/>
           <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
               id="fcd1e083-9876-45f7-aa0a-1357e7068ac6" involved="#accacedf-ddbe-468f-8f6d-fb3f458718d5"/>
           <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
-              id="c71bbf37-3f06-4a1e-bc51-4f4c0a4edf03" involved="#b599f76b-0842-4f5e-848c-76d14d77bb7a"/>
+              id="d6a303b3-0f4e-4a44-a1be-e1ed8bf22693" involved="#3c2a6a97-a0ae-49f6-907e-6f729a1fee9d"/>
           <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
-              id="7ab42c8a-29e8-47d1-9c7c-1c795b8b83b9" involved="#033a9da2-e867-4ac4-8c5a-80d6454a8a67"/>
+              id="b379957b-fa92-4a9b-8bc1-0a3c993e90c9" involved="#278ad574-228b-4723-a73b-7dccd93995ae"/>
           <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
-              id="bf77f2b8-e8d0-4dbc-a88a-0a0d0aa57ee9" involved="#f8f47e93-0c73-4d7a-ad6a-464059e7d564"/>
+              id="5fabf052-feef-4a8e-a21a-5493c52eb35d" involved="#d1087c90-367a-4f3f-8d52-08057a4ef9b4"/>
           <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
               id="e4d2d362-7549-487b-bcef-818d44e0b6fb" targetElement="#039f6535-0146-4c3a-97fa-0f9492a863f5"
               sourceElement="#71f4eaa6-ef23-49fe-a6a1-4096e5b13a9b"/>
@@ -398,10 +309,6 @@
               id="57b8f7e7-62c1-4508-bd9d-5b2d8891e522" involved="#828a4ea3-e37c-4291-8cd2-766c4821ee7e"/>
           <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
               id="e126fdb1-752f-4306-8bcf-d4690c1eb5ee" involved="#f778e3dc-f15b-4877-bc6e-c03e97addb75"/>
-          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
-              id="b5bb1dfd-5b5c-4090-a1f5-51f3520a57df" involved="#6e63821e-c933-45b7-8ef9-389dd030e755"/>
-          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
-              id="bc58621b-9178-4195-afe1-f15c1ce4ba33" involved="#fbb259d0-f18d-4ada-ad0b-dd56a60a0bec"/>
           <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
               id="6c22d02c-d2dc-45e7-970a-316bda30addf" targetElement="#d4eef9d4-5024-49b6-a86a-ab27f4929be9"
               sourceElement="#468213f2-126f-4c06-9155-d496c17772be"/>
@@ -507,9 +414,9 @@
       <ownedSystemComponentPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg"
           id="ea113ff5-c9ac-42f8-a802-d83ba2cc1b5f" name="Structure">
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="52ad5a58-d2ff-41a7-aacc-edfd2d62ab4f"
-            name="Гауссметр" abstractType="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
+            name="System" abstractType="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="dff8d33f-540d-4da7-a409-9a9c1da8b706" name="Гауссметр">
+            id="dff8d33f-540d-4da7-a409-9a9c1da8b706" name="System">
           <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
               id="0fbb463c-76fb-434c-b6e8-3c4ec38fb8ea" name="System State Machine">
             <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"

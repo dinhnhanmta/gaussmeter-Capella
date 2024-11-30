@@ -507,9 +507,9 @@
       <ownedSystemComponentPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg"
           id="ea113ff5-c9ac-42f8-a802-d83ba2cc1b5f" name="Structure">
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="52ad5a58-d2ff-41a7-aacc-edfd2d62ab4f"
-            name="Гауссметр" abstractType="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
+            name="System" abstractType="#dff8d33f-540d-4da7-a409-9a9c1da8b706"/>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="dff8d33f-540d-4da7-a409-9a9c1da8b706" name="Гауссметр">
+            id="dff8d33f-540d-4da7-a409-9a9c1da8b706" name="System">
           <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
               id="0fbb463c-76fb-434c-b6e8-3c4ec38fb8ea" name="System State Machine">
             <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
