@@ -1,10 +1,10 @@
-#Sat Nov 30 16:36:10 ICT 2024
+#Tue Dec 03 17:37:09 MSK 2024
 print.useInches=true
 rulergrid.rulerunit=2
 print.margin.left=0.5
-viewport.x=130
+viewport.x=-260
 rulergrid.gridlinestyle=6
-viewport.y=33
+viewport.y=-10
 zoom=1.0
 print.usePortrait=true
 print.page.height=11.0
