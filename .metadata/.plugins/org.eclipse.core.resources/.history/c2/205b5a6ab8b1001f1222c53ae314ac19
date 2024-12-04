@@ -2080,9 +2080,8 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="42d46fc5-fe59-48b2-af3d-d26cb9a0cca4"
             name="Компьютер" abstractType="#62e5895e-acc5-471d-a72a-26c1ec23ac1b"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-            id="1cf27a3c-c2e4-4c82-9389-1d7053e5c57d" name="Результаты измерений"
-            source="#34825617-3693-4939-b45d-532f107cae3b" target="#fc509002-50be-494e-aba0-54b2cca9313e"
-            kind="FLOW">
+            id="1cf27a3c-c2e4-4c82-9389-1d7053e5c57d" name="USB интерфейс" source="#34825617-3693-4939-b45d-532f107cae3b"
+            target="#fc509002-50be-494e-aba0-54b2cca9313e" kind="FLOW">
           <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
               id="1d728a5b-cf37-4bea-92b8-b0508ba6cda5" targetElement="#d8438a73-071c-4d42-a3c3-103f52605a51"
               sourceElement="#1cf27a3c-c2e4-4c82-9389-1d7053e5c57d"/>
@@ -2119,21 +2118,6 @@
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="6eddc1c6-4359-4b05-afd6-417b572aca43" targetElement="#00941295-e749-43c5-971c-c0eea328cf6c"
               sourceElement="#d74d12b8-f239-4b6a-9f5d-ca5116b04aae"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="1d4bbe41-13a2-4613-9959-a3833a6c72b7" targetElement="#56ba94fb-ff2b-41f9-b87c-71cb4ac25db4"
-              sourceElement="#bea86375-5ec4-43fc-a99f-dcf59f4616d4"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="4cffa4a1-621f-42f1-a5e8-eb281b0a888f" targetElement="#b7848320-3863-474d-a5e3-32c0a7fbba21"
-              sourceElement="#bea86375-5ec4-43fc-a99f-dcf59f4616d4"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="d7028109-6eb9-4b96-970f-d6e38a3af65f" targetElement="#bd4dffcb-095b-49c6-93e6-4ee49ce00831"
-              sourceElement="#bea86375-5ec4-43fc-a99f-dcf59f4616d4"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="d6359c99-6062-4184-8256-b6417e19f205" targetElement="#4a8b474e-c072-40ad-8a21-f7975417e5bf"
-              sourceElement="#bea86375-5ec4-43fc-a99f-dcf59f4616d4"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="f4efaa6f-e03f-4001-99c2-f1cafbe326b2" targetElement="#b8c9b820-e798-4c32-84e9-a94b494e3e99"
-              sourceElement="#bea86375-5ec4-43fc-a99f-dcf59f4616d4"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
               id="34825617-3693-4939-b45d-532f107cae3b" name="CP 1" orientation="INOUT"
               kind="FLOW">

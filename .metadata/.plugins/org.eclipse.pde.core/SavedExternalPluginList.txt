@@ -1,4 +1,4 @@
-# List of external plug-in models previously loaded. Timestamp: 1733249899729
+# List of external plug-in models previously loaded. Timestamp: 1733256647889
 file:/C:/Users/NHANPC/Desktop/capella/capella/plugins/ca.odell.glazedlists_1.11.0.v20190926-1838.jar
 file:/C:/Users/NHANPC/Desktop/capella/capella/plugins/ch.qos.logback.classic_1.2.3.v20200428-2012.jar
 file:/C:/Users/NHANPC/Desktop/capella/capella/plugins/ch.qos.logback.core_1.2.3.v20200428-2012.jar
