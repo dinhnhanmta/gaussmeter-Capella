@@ -1,17 +1,16 @@
-#Wed Dec 04 10:30:20 MSK 2024
+#Wed Dec 04 17:20:37 MSK 2024
 print.useInches=true
 rulergrid.rulerunit=2
 print.margin.left=0.5
-viewport.x=-203
 rulergrid.gridlinestyle=6
-viewport.y=-10
+viewport.y=104
 zoom=1.0
 print.usePortrait=true
 print.page.height=11.0
 print.page.width=8.5
-rulergrid.snaptogrid=true
+rulergrid.snaptogrid=false
 print.margin.bottom=0.5
-rulergrid.snaptogeometry=true
+rulergrid.snaptogeometry=false
 print.margin.top=0.5
 print.margin.right=0.5
 rulergrid.gridlevel=true
